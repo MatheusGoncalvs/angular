@@ -1,0 +1,12 @@
+:host {
+    display: flex;
+}
+
+.menu {
+    background-color: #fafafa;
+    display: flex;
+    flex-grow: 1;
+}
+.menu img {
+    margin: 20px;
+}

@@ -6,13 +6,15 @@ import { ContentComponent } from './content/content.component';
 import { TeuNavbarComponent } from './teu-navbar/teu-navbar.component';
 import { FrameworkConfigService } from './services/framework-config.service';
 import {TopBarComponent} from './top-bar/top-bar.component'
+import { StatusBarComponent } from './status-bar/status-bar.component'
 
 @NgModule({
   declarations: [
     FrameworkBodyComponent,
     ContentComponent,
     TeuNavbarComponent,
-    TopBarComponent
+    TopBarComponent,
+    StatusBarComponent
   ],
   imports: [
     CommonModule

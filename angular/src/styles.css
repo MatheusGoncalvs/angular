@@ -1,3 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+/*Essa classe posibilita a customização do bg do menu para quem implementar o framework*/
+.bg-menu {
+    background-color: royalblue;
+}

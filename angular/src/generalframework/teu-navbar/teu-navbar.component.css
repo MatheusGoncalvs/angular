@@ -1,9 +1,8 @@
 :host {
     display: flex;
 }
-
+/*A classe no css do componente raiz deve ser o mais simples para possibilitar a customização*/
 .menu {
-    background-color: #fafafa;
     display: flex;
     flex-grow: 1;
 }

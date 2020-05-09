@@ -7,6 +7,7 @@ import { TeuNavbarComponent } from './teu-navbar/teu-navbar.component';
 import { FrameworkConfigService } from './services/framework-config.service';
 import {TopBarComponent} from './top-bar/top-bar.component'
 import { StatusBarComponent } from './status-bar/status-bar.component'
+import { ScreenService } from './services/screen.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { StatusBarComponent } from './status-bar/status-bar.component'
     CommonModule
   ],
   providers: [
-    FrameworkConfigService
+    FrameworkConfigService,
+    ScreenService
   ],
   exports: [
     FrameworkBodyComponent

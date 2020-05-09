@@ -5,12 +5,14 @@ import { FrameworkBodyComponent } from './framework-body/framework-body.componen
 import { ContentComponent } from './content/content.component';
 import { TeuNavbarComponent } from './teu-navbar/teu-navbar.component';
 import { FrameworkConfigService } from './services/framework-config.service';
+import {TopBarComponent} from './top-bar/top-bar.component'
 
 @NgModule({
   declarations: [
     FrameworkBodyComponent,
     ContentComponent,
-    TeuNavbarComponent
+    TeuNavbarComponent,
+    TopBarComponent
   ],
   imports: [
     CommonModule

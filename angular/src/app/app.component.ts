@@ -8,7 +8,7 @@ import {FrameworkConfigService, FrameworkConfigSettings} from '../generalframewo
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private frameworkConfigService: FrameworkConfigService ) {
+  constructor(public frameworkConfigService: FrameworkConfigService ) {
     let config:FrameworkConfigSettings = {
       socialIcons: [
         {imageFile: './assets/images/social-facebook.png', alt: 'Facebook', link: 'www.facebook.com'},

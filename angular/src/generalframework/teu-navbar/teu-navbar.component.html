@@ -1,8 +1,8 @@
-<div *ngIf="screenService.isLarge()" class="menu bg-menu">
+<div *screenLarge class="menu bg-menu">
     <img src="assets/images/logo-desktop.png">
     <fw-top-bar class="top-bar"></fw-top-bar>
 </div>
-<div *ngIf="!screenService.isLarge()" class="menu">
+<div *screenBelowLarge class="menu">
     <img class="small-image" src="assets/images/logo-desktop.png">
     <fw-top-bar class="top-bar"></fw-top-bar>
 </div>

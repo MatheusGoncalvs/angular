@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScreenService } from '../services/screen.service';
 
 @Component({
   selector: 'fw-teu-navbar',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeuNavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public screenService : ScreenService) { }
 
   ngOnInit(): void {
   }

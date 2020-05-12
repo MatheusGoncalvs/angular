@@ -11,6 +11,7 @@ import { ScreenService } from './services/screen.service';
 import { ScreenLarge } from './directives/screen-large.directive';
 import { ScreenBelowLarge } from './directives/screen-below-large.directive';
 import { MenuService } from './services/menu.service';
+import { MenuComponent } from './menus/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MenuService } from './services/menu.service';
     TeuNavbarComponent,
     TopBarComponent,
     StatusBarComponent,
+    MenuComponent,
     ScreenLarge,
     ScreenBelowLarge
   ],

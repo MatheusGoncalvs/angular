@@ -12,6 +12,7 @@ import { ScreenLarge } from './directives/screen-large.directive';
 import { ScreenBelowLarge } from './directives/screen-below-large.directive';
 import { MenuService } from './services/menu.service';
 import { MenuComponent } from './menus/menu/menu.component';
+import { MenuItemComponent } from './menus/menu-item/menu-item.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MenuComponent } from './menus/menu/menu.component';
     TopBarComponent,
     StatusBarComponent,
     MenuComponent,
+    MenuItemComponent,
     ScreenLarge,
     ScreenBelowLarge
   ],

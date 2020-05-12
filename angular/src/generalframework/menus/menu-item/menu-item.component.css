@@ -36,3 +36,7 @@ i {
 .menu-item:hover {
     background-color: #fafafa;
 }
+
+.router-link-active {
+    background-color: #fafafa;
+}

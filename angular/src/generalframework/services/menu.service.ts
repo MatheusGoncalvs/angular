@@ -12,5 +12,10 @@ export class MenuService {
     items: Array<MenuItem>;
     
     isVertical = true;
+    showingLeftSideMenu = false;
+
+    toggleLeftSideMenu() : void {
+        this.showingLeftSideMenu = !this.showingLeftSideMenu;
+    }
 
 }

@@ -1,7 +1,7 @@
 <div *screenLarge class="menu bg-menu">
     <img src="assets/images/logo-desktop.png">
     <fw-top-bar class="top-bar"></fw-top-bar>
-    <fw-menu></fw-menu>
+    <fw-menu *ngIf="!menuService.isVertical"></fw-menu>
 </div>
 <div *screenBelowLarge class="menu">
     <img class="small-image" src="assets/images/logo-desktop.png">

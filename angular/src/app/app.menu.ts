@@ -54,26 +54,27 @@ export let initialMenuItems: Array<MenuItem> = [
                 icon: 'glyphicon-flag',
                 route: 'country-list/0',
                 submenu: null
+            }
+
+        ]
+    },
+    {
+        text: 'Maintenance',
+        icon: 'glyphicon-wrench',
+        route: null,
+        submenu: [
+            {
+                text: 'Country List',
+                icon: 'glyphicon-th-list',
+                route: 'country-maint',
+                submenu: null
             },
             {
-                text: 'Maintenance',
-                icon: 'glyphicon-wrench',
-                route: null,
-                submenu: [
-                    {
-                        text: 'Country List',
-                        icon: 'glyphicon-th-list',
-                        route: 'country-maint',
-                        submenu: null
-                    },
-                    {
-                        text: 'Settings',
-                        icon: 'glyphicon-cog',
-                        route: 'settings',
-                        submenu: null
-                    }
-                ]
-            },
+                text: 'Settings',
+                icon: 'glyphicon-cog',
+                route: 'settings',
+                submenu: null
+            }
         ]
     }
 ]

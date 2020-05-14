@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GeneralframeworkModule } from '../generalframework/generalframework.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { CountriesComponent } from './countries/countries.component';
 import { SettingsComponent } from './settings/settings.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './app.rounting';
@@ -17,7 +16,6 @@ import { CountryDetailComponent } from './country-detail/country-detail.componen
   declarations: [
     AppComponent,
     DashboardComponent,
-    CountriesComponent,
     SettingsComponent,
     CountryListComponent,
     CountryMaintComponent,

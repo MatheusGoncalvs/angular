@@ -7,7 +7,7 @@ export class ScreenService {
     resize$ = this.resizeSource.asObservable();
 
     largeBreakpoint = 800;
-    screenWidth = 1300;
+    screenWidth = 825;
     screenHeight = 800;
 
     constructor() {

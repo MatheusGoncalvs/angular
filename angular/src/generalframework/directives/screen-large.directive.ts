@@ -1,4 +1,4 @@
-import { Directive, Input,OnDestroy, TemplateRef, ViewContainerRef } from '@angular/core';
+import { Directive, Input, OnDestroy, TemplateRef, ViewContainerRef } from '@angular/core';
 
 import { ScreenService } from '../services/screen.service';
 import { Subscription } from 'rxjs';

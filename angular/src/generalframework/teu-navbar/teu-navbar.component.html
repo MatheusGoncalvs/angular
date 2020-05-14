@@ -1,11 +1,10 @@
+<div *screenBelowLarge class="menu">
+    <span class="glyphicon glyphicon-menu-hamburger" (click)="menuService.toggleLeftSideMenu()"></span>
+    <img class="small-image" src="assets/images/logo-desktop.png">
+    <fw-top-bar class="top-bar"></fw-top-bar>
+</div>
 <div *screenLarge class="menu bg-menu">
     <img src="assets/images/logo-desktop.png">
     <fw-top-bar class="top-bar"></fw-top-bar>
     <fw-menu *ngIf="!menuService.isVertical"></fw-menu>
-</div>
-<div *screenBelowLarge class="menu">
-    <button value="Hide Menu" (click)="menuService.toggleLeftSideMenu()"></button>
-    <span class="glyphicon glyphicon-menu-hamburger" (click)="menuService.toggleLeftSideMenu()"></span>
-    <img class="small-image" src="assets/images/logo-desktop.png">
-    <fw-top-bar class="top-bar"></fw-top-bar>
 </div>

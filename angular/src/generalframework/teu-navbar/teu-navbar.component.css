@@ -13,5 +13,10 @@
     margin: auto;
 }
 .small-image {
-    width: 50px;
+    width: 150px;
+}
+.glyphicon-menu-hamburger {
+    font-size: 20px !important;
+    cursor: pointer;
+    padding: 15px;
 }

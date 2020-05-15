@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, HostBinding, HostListener } from '@angular/core';
+import { Component, Input, OnInit, HostBinding, HostListener, ElementRef, Renderer2 } from '@angular/core';
 import { MenuItem, MenuService } from 'src/generalframework/services/menu.service';
 import { Router } from '@angular/router';
 
@@ -18,9 +18,24 @@ export class MenuItemComponent implements OnInit {
   popupLeft = 0;
   popupTop = 34;
 
-  constructor(public router: Router, public menuService: MenuService) { }
+  constructor(public router: Router, public menuService: MenuService, private el: ElementRef, private renderer: Renderer2 ) { }
 
   ngOnInit(): void {
+  }
+
+  @HostListener('click', ['$event'])
+  onClick(event) : void {
+    event.stopPropagation(); //Não permite a propagação do envento a elementos pai. Fica restrito nesse componente.
+
+    if(this.item.submenu){
+      if(this.menuService.isVertical) {
+        this.mouseInPopup = !this.mouseInPopup;
+      }
+    }else if(this.item.route) {
+      let newEvent = new MouseEvent('mouseleave', {bubbles: true});
+      //this.renderer.invokeElementMethod(this.el.nativeElement, 'dispatchEvent', [newEvent]); deprecated
+      this.router.navigate(['/' + this.item.route]);
+    }
   }
 
   onPopupMouseIn(event) : void {

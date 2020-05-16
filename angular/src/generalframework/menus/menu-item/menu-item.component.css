@@ -33,6 +33,17 @@ span {
     pointer-events: none;
 }
 
+.glyphicon {
+    top: 1px;
+    font-size: 14px;
+    margin-right: 4px;
+    margin-left: 8px;
+}
+
+.glyphicon-menu-left, .glyphicon-menu-right, .glyphicon-menu-down {
+    float: right;
+}
+
 i {
     top: 1px;
     font-size: 14px;
